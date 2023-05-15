@@ -23,6 +23,7 @@ export default function Products(props) {
 
 function Product(props) {
   
+  const img = props.product.src;
   const name = props.product.name;
   const price = props.product.price;
   const product = props.product;
@@ -30,6 +31,7 @@ function Product(props) {
 
   return (
     <div className="Product">
+      <img src={img} alt={name} />
       <div className="name">
         {name}
       </div>

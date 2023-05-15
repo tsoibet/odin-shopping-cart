@@ -48,7 +48,7 @@ ul {
 }
 
 .main {
-  padding: 4rem 1rem 1rem 1rem;
+  padding: 5rem 3rem 3rem 3rem;
 }
 
 h1 {
@@ -64,17 +64,31 @@ h1 {
 .Products .products {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
-  gap: 1rem;
+  gap: 2rem;
 }
 
-.name {
-  font-size: 1.2rem;
+.Product {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  gap: 0.2rem;
+}
+
+img {
+  width: 100%;
 }
 
 .Cart, .Products {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
+}
+
+.CartItem {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
   gap: 1rem;
+  align-items: center;
 }
 
 .Cart input {
@@ -89,6 +103,7 @@ h1 {
 
 .delete button, .add button {
   padding: 0 0.2rem;
+  font-size: 0.9rem;
 }
 
 .amount {
