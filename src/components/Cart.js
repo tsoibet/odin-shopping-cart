@@ -19,8 +19,9 @@ export default function Cart(props) {
       />
       )}
       <div className="amount">
-        Total: ${amount}
+        Total: ${amount} 
       </div>
+      <button>Check out</button>
     </div>
   );
 }
