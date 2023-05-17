@@ -22,6 +22,11 @@ ul {
   grid-template-rows: 1fr auto;
 }
 
+.App.home {
+  background-image: url('./resources/homepage.jpeg');
+  background-size: cover;
+}
+
 .NavBar {
   position: fixed;
   width: 100%;
@@ -116,12 +121,17 @@ img {
 
 .checkout.button {
   width: 100%;
+  padding: 0.2rem;
 }
 
 .Checkout {
   height: 100%;
   display: grid;
   place-items: center;
+}
+
+.NotFound {
+  text-align: center;
 }
 
 .footer {

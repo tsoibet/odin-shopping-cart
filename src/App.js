@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Homepage from './components/Homepage';
 import Products from './components/Products';
@@ -61,12 +61,12 @@ export default function App() {
   }
 
   return (
-    <div className="App">
+    <div className={useLocation().pathname === '/' ? "App home" : "App"}>
       <NavBar 
         number={quantity} 
         amount={amount} 
       />
-      <div className="main">    
+      <div className="main">
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/products" element={
