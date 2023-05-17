@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Homepage from './components/Homepage';
 import Products from './components/Products';
 import Cart from './components/Cart';
+import Checkout from './components/Checkout';
 import NavBar from './components/NavBar';
 import NotFound from './components/NotFound';
 import './App.css';
@@ -78,6 +79,10 @@ export default function App() {
     }
   }
 
+  function resetCart() {
+    setCart([]);
+  }
+
   return (
     <div className="App">
       <NavBar 
@@ -97,6 +102,10 @@ export default function App() {
               cart={cart} 
               amount={amount} 
               updateCart={updateCart} 
+            />} />
+          <Route path="/checkout" element={
+            <Checkout 
+              resetCart={resetCart} 
             />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

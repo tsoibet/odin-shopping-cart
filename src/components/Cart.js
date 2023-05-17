@@ -1,15 +1,18 @@
+import { Link } from "react-router-dom";
+
 export default function Cart(props) {
 
   const amount = props.amount;
   const cart = props.cart;
   const updateCart = props.updateCart;
+  const resetCart = props.resetCart;
 
   return (
     <div className="Cart">
       <div className="title">
         Shopping Cart
       </div>
-      {cart.length === 0 && <div>Your cart is empty!</div>}
+      {cart.length === 0 && <div>Your cart is empty.</div>}
       {cart.map(cartItem =>
       <CartItem 
         key={cartItem.item.id} 
@@ -21,7 +24,10 @@ export default function Cart(props) {
       <div className="amount">
         Total: ${amount} 
       </div>
-      <button>Check out</button>
+      {cart.length > 0 && 
+      <Link to="/checkout">
+        <button className="checkout button">Check out</button>
+      </Link>}
     </div>
   );
 }

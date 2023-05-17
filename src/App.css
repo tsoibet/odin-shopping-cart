@@ -114,6 +114,16 @@ img {
   font-weight: bold;
 }
 
+.checkout.button {
+  width: 100%;
+}
+
+.Checkout {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
 .footer {
   padding: 0.4rem;
   width: 100%;
