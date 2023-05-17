@@ -5,7 +5,6 @@ export default function Cart(props) {
   const amount = props.amount;
   const cart = props.cart;
   const updateCart = props.updateCart;
-  const resetCart = props.resetCart;
 
   return (
     <div className="Cart">
