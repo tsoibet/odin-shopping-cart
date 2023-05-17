@@ -10,6 +10,8 @@ import './App.css';
 
 export default function App() {
 
+  const location = useLocation();
+
   const [cart, setCart] = useState([]);
   const [quantity, setQuantity] = useState(0);
   const [amount, setAmount] = useState(0);
@@ -61,7 +63,7 @@ export default function App() {
   }
 
   return (
-    <div className={useLocation().pathname === '/' ? "App home" : "App"}>
+    <div className={location.pathname === '/' ? "App home" : "App"}>
       <NavBar 
         number={quantity} 
         amount={amount} 

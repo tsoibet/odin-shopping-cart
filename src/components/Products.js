@@ -7,7 +7,6 @@ import product05 from '../resources/product-05.jpeg';
 import product06 from '../resources/product-06.jpeg';
 import product07 from '../resources/product-07.jpeg';
 import product08 from '../resources/product-08.jpeg';
-// import product09 from './resources/product-09.jpeg';
 
 export default function Products(props) {
 
@@ -21,7 +20,6 @@ export default function Products(props) {
     {id: 6, src: product06, name: "Light blue denim cap", price: 30}, 
     {id: 7, src: product07, name: "Denim and yellow-dotted sun hat", price: 30}, 
     {id: 8, src: product08, name: "Sailor style bandana", price: 5} 
-    // {id: 9, src: product09, name: "A", price: 5}
   ];
 
   return (
