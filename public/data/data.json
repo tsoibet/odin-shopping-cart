@@ -1,0 +1,56 @@
+[
+  {
+    "id": 0, 
+    "src": "/data/img/product-00.jpeg", 
+    "name": "Tomato bib", 
+    "price": 10
+  }, 
+  {
+    "id": 1, 
+    "src": "/data/img/product-01.jpeg", 
+    "name": "\"I'm very hungry\" bib", 
+    "price": 10
+  }, 
+  {
+    "id": 2, 
+    "src": "/data/img/product-02.jpeg", 
+    "name": "Duck duck duck Bib", 
+    "price": 5
+  }, 
+  {
+    "id": 3, 
+    "src": "/data/img/product-03.jpeg", 
+    "name": "Yellow duck bib", 
+    "price": 5
+  }, 
+  {
+    "id": 4, 
+    "src": "/data/img/product-04.jpeg", 
+    "name": "Grey bib", 
+    "price": 5
+  }, 
+  {
+    "id": 5, 
+    "src": "/data/img/product-05.jpeg", 
+    "name": "Japanese onigiri cap", 
+    "price": 30
+  }, 
+  {
+    "id": 6, 
+    "src": "/data/img/product-06.jpeg", 
+    "name": "Light blue denim cap", 
+    "price": 30
+  }, 
+  {
+    "id": 7, 
+    "src": "/data/img/product-07.jpeg", 
+    "name": "Denim and yellow-dotted sun hat", 
+    "price": 30
+  }, 
+  {
+    "id": 8, 
+    "src": "/data/img/product-08.jpeg", 
+    "name": "Sailor style bandana", 
+    "price": 5
+  } 
+]
