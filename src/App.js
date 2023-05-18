@@ -26,7 +26,7 @@ export default function App() {
     localStorage.setItem('cart', JSON.stringify(cart));
   }, [cart]);
 
-  useEffect(() => updateQuantityAndAmount(), [cart]);
+  useEffect(updateQuantityAndAmount, [cart]);
 
   function updateQuantityAndAmount() {
     let quantity = 0;
