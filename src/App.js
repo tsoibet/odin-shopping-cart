@@ -12,9 +12,19 @@ export default function App() {
 
   const location = useLocation();
 
-  const [cart, setCart] = useState([]);
+  let storage;
+  if (localStorage.getItem('cart')) {
+    storage = JSON.parse(localStorage.getItem('cart'));
+  } else {
+    storage = [];
+  }
+  const [cart, setCart] = useState(storage);
   const [quantity, setQuantity] = useState(0);
   const [amount, setAmount] = useState(0);
+
+  useEffect(() => {
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }, [cart]);
 
   useEffect(() => updateQuantityAndAmount(), [cart]);
 
