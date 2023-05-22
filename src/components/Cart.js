@@ -34,7 +34,7 @@ export default function Cart(props) {
 function CartItem(props) {
   
   const id = props.item.id;
-  const img = props.item.src;
+  const imgPath = process.env.PUBLIC_URL + props.item.src;
   const name = props.item.name;
   const price = props.item.price;
   const quantity = props.quantity;
@@ -42,7 +42,7 @@ function CartItem(props) {
 
   return (
     <div className="CartItem">
-      <img src={img} alt={name} />
+      <img src={imgPath} alt={name} />
       <div className="name">
         {name}
       </div>
